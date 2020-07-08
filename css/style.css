@@ -1,0 +1,226 @@
+html {
+  position: relative;
+}
+
+body {
+  margin-bottom: 100px;
+}
+
+/* Navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: 'Amatic SC', cursive;
+    font-size: 32px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url('../img/jumbotron-bg.jpg');
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 85%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 150px;
+    font-weight: 500;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.jumbotron .lead {
+    color:#64DD17;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* whatido */
+.whatido {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -100px;
+    background-color: silver;
+    padding: 30px;
+}
+
+.whatido img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.whatido h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.whatido p {
+  font-size: 14px;
+  color:#1B5E20;
+  margin-top: -5px;
+  font-weight: 200;
+}
+
+/* about me */
+.aboutme {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.aboutme span {
+  font-weight: 500;
+}
+
+.aboutme img {
+  width: 360px;
+  height: 360px;
+}
+
+.aboutme h3 {
+  font-size: 30px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.aboutme p {
+  font-size: 18px;
+  color:#1B5E20;
+  font-weight: 200;
+  margin: 30px 0;
+}
+
+/* portfolio */
+.portfolio {
+  margin-top: 120px;
+}
+
+.portfolio img {
+  margin-top: 20px;
+}
+
+.portfolio img:hover {
+  transform: scaleX(-1);
+}
+
+/* contact */
+
+.contact {
+  margin-top: 120px;
+  min-height: 1000px;
+}
+
+.contact .note {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1B5E20;
+}
+
+.contact .fa {
+  padding: 60px;
+  font-size: 30px;
+  width: 30px;
+}
+
+.form-group {
+  margin-top: 20px;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #333333;
+  padding-top: 30px;
+}
+
+footer p {
+  color: silver;
+  font-size: 1em;
+}
+
+
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+
+/* DEKSTOP */
+@media (min-width: 992px) {
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+    
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #03A9F4;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+
+    }
+
+    .jumbotron {
+      margin-top: -75px;
+      height: 640px;
+    }
+
+    .jumbotron .display-4 {
+      font-size: 62px;
+    }
+
+    .aboutme {
+      text-align: left;
+    }
+
+    .aboutme h3 {
+      font-size: 50px;
+    }
+
+    .form-group {
+      margin-top: 0;
+    }
+
+    .contact {
+      min-height: 600px;
+    }
+
+}
